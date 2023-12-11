@@ -38,18 +38,30 @@ main {
     grid-area: main;
 }
 body > footer {
+    padding-block: 20px;
     grid-area: footer;
-    background-color: #aaa;
+    background-color: #444;
+    color: white
 }
 
 .footer-box {
     width: 800px;
-    height: 400px;
+    height: max-content;
     margin: 0 auto;
     display: grid;
     grid-template-columns: auto auto auto;
 
-    background-color: #eee;
+    /* background-color: #eee; */
+}
+
+body > footer address { font-style: normal; }  /* Remove italic */
+
+
+
+.footer-data {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-columns: auto auto auto auto;
 }
 
 
