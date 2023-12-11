@@ -38,16 +38,21 @@ body {
 
 /*--- main ---*/
 body > main {
-    grid-area: main;
-    display: grid;
-    /* grid-template-columns: auto 900px auto;
-    grid-template-rows: auto auto; */
-    grid-template-areas:
-        "side products-small side"
-        "side products-big side";
-    grid-template-columns: 1fr 900px 1fr;
-    grid-template-rows: auto auto;
+
 }
+
+.products {
+    width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "products-small"
+    "products-big";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 30px;
+}
+
 
 .side { 
     grid-area: side;
@@ -58,7 +63,7 @@ body > main {
 }
 
 .product-big {
-    grid-area: product-big;
+    grid-area: products-big;
 }
 
 
