@@ -34,7 +34,7 @@ top-box nav {
     margin-inline: auto;
 }
 
-main {
+body > main {
     grid-area: main;
 }
 body > footer {
@@ -45,24 +45,24 @@ body > footer {
 }
 
 .footer-box {
-    width: 800px;
+    width: 900px;
     height: max-content;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto;
-
+    grid-template-columns: repeat(3, 260px);
     /* background-color: #eee; */
 }
 
 body > footer address { font-style: normal; }  /* Remove italic */
 
-
-
-.footer-data {
+body > footer .media-icons {
     display: grid;
-    grid-template-columns: auto;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 32px);
+    grid-template-rows: auto;
+    gap: 20px;
 }
+
+
 
 
 
