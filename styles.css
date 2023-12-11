@@ -37,9 +37,19 @@ top-box nav {
 main {
     grid-area: main;
 }
-footer {
+body > footer {
     grid-area: footer;
     background-color: #aaa;
+}
+
+.footer-box {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    background-color: #eee;
 }
 
 
