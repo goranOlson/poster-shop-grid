@@ -49,13 +49,17 @@ body > footer {
     height: max-content;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 260px);
-    /* background-color: #eee; */
+    grid-template-columns: repeat(3, 300px);
+    /* background-color: #a00; */
 }
 
-body > footer address { font-style: normal; }  /* Remove italic */
+.footer-box h2 { margin-bottom: 8px; }
 
-body > footer .media-icons {
+.footer-box div { padding-bottom: 4px; }
+
+.footer-box address { font-style: normal; }  /* Remove italic */
+
+.footer-box .media-icons {
     display: grid;
     grid-template-columns: repeat(4, 32px);
     grid-template-rows: auto;
