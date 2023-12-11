@@ -19,7 +19,7 @@ body {
     grid-template-rows: auto auto auto;
     gap: 30px;
 }
-top-box nav {
+.top-box nav {
     width: max-content;
     margin: 20px;
     grid-row: 1;
@@ -28,15 +28,42 @@ top-box nav {
     grid-row: 2;
     width: max-content;
     margin-inline: auto;
+    font-size: 70px;
 }
 .top-box .ninjahead {
     grid-row: 3;
     margin-inline: auto;
 }
 
+
+/*--- main ---*/
 body > main {
     grid-area: main;
+    display: grid;
+    /* grid-template-columns: auto 900px auto;
+    grid-template-rows: auto auto; */
+    grid-template-areas:
+        "side products-small side"
+        "side products-big side";
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: auto auto;
 }
+
+.side { 
+    grid-area: side;
+    background-color: #3de07e
+}
+.product-small {
+    grid-area: product-small;
+}
+
+.product-big {
+    grid-area: product-big;
+}
+
+
+
+/*--- footer ---*/
 body > footer {
     padding-block: 20px;
     grid-area: footer;
