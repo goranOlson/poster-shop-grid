@@ -1,8 +1,6 @@
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    
 }
 .grid {
     display: grid;
@@ -13,27 +11,25 @@ body {
         "footer";
 }
 
-header {
+.top-box {
     grid-area: header;
     background-color: #3de07e;
     display: grid;
-    grid-template-columns: 200px auto 200px;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     gap: 30px;
-    /* justify-content: center;
-    align-items: center; */
 }
-nav {
+top-box nav {
+    width: max-content;
     margin: 20px;
-    grid-column: 1;
     grid-row: 1;
 }
-h1 {
-    grid-column: 2;
+.top-box h1 {
     grid-row: 2;
+    width: max-content;
+    margin-inline: auto;
 }
-.ninjahead {
-    grid-column: 2;
+.top-box .ninjahead {
     grid-row: 3;
     margin-inline: auto;
 }
