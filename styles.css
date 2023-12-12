@@ -1,10 +1,12 @@
 body {
     margin: 0;
+    background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .grid {
     display: grid;
-    gap: 1rem;
+    /* gap: 1rem; */
+    row-gap: 60px;
     grid-template-areas:
         "header"
         "main"
@@ -37,9 +39,7 @@ body {
 
 
 /*--- main ---*/
-body > main {
 
-}
 
 .products {
     width: 770px;
@@ -50,8 +50,7 @@ body > main {
         "products-big";
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    row-gap: 30px;
-        background: #800;
+    row-gap: 80px;
 }
 
 .products-small {
@@ -75,8 +74,10 @@ body > main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, auto);
     column-gap: 20px;
-    background-color: #3de07e;
+    /* background-color: #fff; */
+    color: black;
 }
+
 
 
 
@@ -94,7 +95,11 @@ body > main {
 .product-item h2 {
     margin-top: 12px;
     margin-bottom: 8px;
+    padding: 8px;
     font-size: 30px;
+}
+.products-big div {
+    padding: 8px;
 }
 
 .product-item button {
@@ -108,6 +113,10 @@ body > main {
     /* margin-top: 24px; */
 }
 
+.products-big .info-text {
+    background-color: white;
+    color: black;
+}
 
 
 /*--- footer ---*/
@@ -119,12 +128,12 @@ body > footer {
 }
 
 .footer-box {
-    width: 920px;
+    width: 770px;
     height: max-content;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 300px);
-        background-color: #a00;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
 }
 
 .footer-box h2 { margin-bottom: 8px; }
